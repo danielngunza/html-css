@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        thead > tr >th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(54, 54, 54);
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color: rgb(54, 54, 54);
+            color: white;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgrey;
+            border: 1px solid black;
+        }
+        tbody tr:nth-child(odd){ /* 2n-1 */
+            background-color: rgb(255, 255, 255);
+        }
+        tbody tr:nth-child(even){ /* 2n */
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TH, TR, TD
+            TBODY
+                TH, TR, TD
+            TFOOT
+                TH, TR, TD
+    -->
+    <table>
+        <caption>Mês e dia</caption>
+        <thead>
+            <tr>
+                <th scope="col">Mês</th>
+                <th scope="col" style="width: 100px;">Total de dias</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Janeiro</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Fevereiro</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>Março</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Abril</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Maio</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Junho</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Julho</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Agosto</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Setembro</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Outubro</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Novembro</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Dezembro</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Janeiro</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Fevereiro</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>Março</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Abril</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Maio</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Junho</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Julho</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Agosto</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Setembro</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Outubro</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Novembro</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Dezembro</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Janeiro</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Fevereiro</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>Março</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Abril</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Maio</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Junho</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Julho</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Agosto</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Setembro</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Outubro</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Novembro</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Dezembro</td>
+                <td>31</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td ><strong>730</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
