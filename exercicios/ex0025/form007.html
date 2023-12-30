@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Teste de Formularios</h1>
+    <form action="#" method="post">
+        <select name="estdo" id="iest">
+            <option value="Bengo">Bengo</option>
+            <option value="Benguela">Benguela</option>
+            <option value="Cabinda">Cabinda</option>
+            <option value="CuandoC">Cuando Cubango</option>
+        </select>
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="prof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+                <option>Designer</option>
+                <option>Editor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem: </label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
